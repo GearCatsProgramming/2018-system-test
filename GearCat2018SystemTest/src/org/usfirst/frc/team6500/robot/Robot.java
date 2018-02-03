@@ -11,6 +11,7 @@ import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.drive.MecanumDrive;
+import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
@@ -134,5 +135,10 @@ public class Robot extends IterativeRobot {
 		frontRight.set(0.0);
 		rearRight.set(0.0);
 		
+	}
+	
+	public void testPeriodic() {
+	     LiveWindow.isEnabled();
+	     
 	}
 }
